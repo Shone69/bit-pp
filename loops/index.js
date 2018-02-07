@@ -34,7 +34,45 @@
 // for (var i = 0; i < 20; i++) {
 
 //     t += i * i;
-    
+
 // }
 // console.log(t);
+
+// function sum(a, b) {
+//     return a + b;
+// }
+// console.log(sum(1, 3))
+
+// function moja(a){
+//     var result = "";
+
+//     if(a%2 === 0){
+//         result = "Deljiv je";
+
+//         return result;
+
+//     } else{
+//         result = "Neparan je";
+
+//         return result;
+//     }
+// }
+
+// console.log(moja(8));
+
+function isThree(a){
+    var result ="";
+    for(var i = 0;i<a.length;i++){
+        if()
+    }
+    // if(a > 99){
+    //     result = "Trocifren je";
+    //     return result;
+    // } else {
+    //     result = "Dvocifren je";
+    //     return result;
+    // }
+
+}
+console.log(isThree(99));
 
