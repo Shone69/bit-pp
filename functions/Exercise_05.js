@@ -1,21 +1,19 @@
-
-function square(size) {
-    var middleRow = "";
-    var row = ""
-    for (var i = 0; i < size; i++) {
-        row += "*";
+function sqrStars(a){
+    var starsString="";
+    for(var i=0;i<a;i++){
+        starsString += "\n";
+        for(var j=0;j<a;j++){
+            if (i===0 || i===(a-1)){
+                starsString += "*";
+            } else {
+                if (j===0 || j===(a-1)){
+                    starsString += "*";
+                } else {
+                    starsString += " ";
+                }
+            }
+        }
     }
-    console.log(row);
-
-    for (var j = 1; j < size; j++) {
-        if (j === 1 || j === size ) {
-            middleRow += "*";
-        } else {
-            middleRow += " ";
-        }     
-
-    }
-    console.log(middleRow);
-    
+    console.log(starsString);
 }
-square(5);
+sqrStars(7);

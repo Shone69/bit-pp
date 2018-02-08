@@ -5,3 +5,4 @@ function conc (input, number){
     }return con;
 }
 console.log(conc("ha",7));
+
