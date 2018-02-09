@@ -10,6 +10,6 @@ function letterCounter(word,letter) {
     return res;
 }
 // var result = letterCounter("nnnadsasdadas","n");
-console.log(result);
+console.log(letterCounter());
 
 // letterCounter("nnnadsasdadas","n");
