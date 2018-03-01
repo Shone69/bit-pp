@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
+</head>
+
+<body>
+    <div>
+        <form action="" id="createMovieForm">
+            <label for="title">Title</label>
+            <input type="text" id="titleOfMovie" required>
+            <label for="length">Length</label>
+            <input type="text" id="lengthOfMovie" required>
+            <select id="genreOfMovie" required>
+                <option value="none"> -</option>
+                <option value="DA"> Drama</option>
+                <option value="CY"> Comedy</option>
+                <option value="HR"> Horor</option>
+                <option value="AN"> Action</option>
+            </select>
+
+            <input type="button" onclick="createMovie()" value="Create movie">
+        </form>
+        <div id="movieList">
+        </div>
+
+        <div>
+            <input id="thisDay" type="date">
+            <input type="button" onclick="" value="Create program">
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
