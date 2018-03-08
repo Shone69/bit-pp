@@ -1,0 +1,78 @@
+.left{
+    display: inline-block;
+    width: 30%;
+    border: 2px solid rgb(7, 7, 7);
+    padding: 10px;
+}
+.right{
+    display: inline-block;
+    width: 30%;
+    border: 2px solid rgb(7, 7, 7);
+    padding: 10px;
+
+}
+.middle{
+    display: inline-block;
+    width: 30%;
+    border: 2px solid rgb(7, 7, 7);
+    padding: 10px;
+
+}
+input{
+    display: block;
+    width: 80%;
+    margin: 2% auto;
+    padding: 2%;
+}
+select{
+    width: 80%;
+    margin: 2% auto;
+    padding: 2%;
+    display: block;
+}
+
+button{
+    width: 30%;
+    height: 5%;
+    margin: 10px;
+    margin-left: 60%;
+}
+table{
+    width: 100%;
+}
+th{
+    border: 2px solid gray;
+}
+.numOf10table{
+    margin-top: 20px;
+}
+section{
+    border: 2px solid gray;
+}
+.selectedStudentTh{
+    width: 30%;
+}
+.selectedStudent{
+    margin-bottom: 20px;
+}
+/* .inputRadio{
+    display: inline-block;
+    width: 20%;
+}
+label{
+    display: block;
+} */
+
+#showStudentNumber{
+width: 20%;
+display: inline-block;
+margin: 5%;
+}
+#showStudentButton{
+    width: 50%;
+    display: inline-block;
+}
+
+.studentList>tr>td{
+    border-bottom: 1px solid black;
+}

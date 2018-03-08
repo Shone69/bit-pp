@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="movieList.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <Fieldset>
+        <legend>Movie</legend>
+        <input type="text" id="movieTitle" value="" placeholder="Movie Title">
+        <input type="number" id="movieLength" value="" placeholder="Movie Length">
+        <select name="genre" id="movieGenre">
+            <option value="-">-</option>
+            <option value="AN">Action</option>
+            <option value="CY">Comedy</option>
+            <option value="DR">Drama</option>
+        </select>
+        <input type="submit" class='button' onclick="createMovie()" value="Create">
+
+        <ul class="listaFilmova">
+
+        </ul>
+    </Fieldset>
+
+    <fieldset>
+        <legend>Program</legend>
+        <input type='date' id='programDate' value="" placeholder="dd/mm/yyyy">
+        <input type='submit' class='button' onclick="createProgram()" value='createProgram'>
+        <ul class='listaPrograma'>
+
+        </ul>
+        <fieldset>
+            <legend>Adding Movie to Program</legend>
+            <label>Please select Movie to add to Program:
+                <select name="listaFilmovaProgram" class="listaFilmovaProgram">
+
+                </select>
+            </label>
+            <label>Please select program where to add Movie:
+                <select name="listaProgramaSelect" class="listaProgramaSelect">
+
+                </select>
+            </label>
+            <input type='submit' class='button addMovieButton' onclick="AddMovieToProgram()" value='addMovieToProgram'>
+            <ul class = 'movieInProgram'>
+
+            </ul>
+        </fieldset>
+    </fieldset>
+    <script src="movieList.js"></script>
+</body>
+
+</html>

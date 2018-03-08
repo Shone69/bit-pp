@@ -1,3 +1,5 @@
+"use strict";
+
 function conc (input, number){
     var con = "";
     for (var i=0; i < number; i++){
@@ -5,4 +7,3 @@ function conc (input, number){
     }return con;
 }
 console.log(conc("ha",7));
-

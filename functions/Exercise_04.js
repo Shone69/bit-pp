@@ -1,6 +1,8 @@
-/* function arithmetic(a, b, c, d) {
+ "use strict";
+ 
+ function arithmetic(a, b, c, d) {
     return (a + b + c+ d) / 4;
-} */
+}
 
 function arithmetic() {
     var sum = 0;

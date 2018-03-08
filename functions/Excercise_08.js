@@ -1,8 +1,8 @@
-
+"use strict";
 
 function appearances(givenNumber, givenArray) {
     var numberOfApp = 0;
-    for (i = 0; i < givenArray.length; i++) {
+    for (var i = 0; i < givenArray.length; i++) {
         if (givenArray[i] === givenNumber) {
             numberOfApp += 1;
         }

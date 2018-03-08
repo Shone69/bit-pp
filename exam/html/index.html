@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exam</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <main>
+        <div id="header">
+            <h2>Exam Statistic June</h2>
+            <h4>Total Students:
+                <span id="totalStudentsCount">0</span>
+            </h4>
+            <div id="passedCount">
+                <h5>    Passed:
+                    <span id="passedCountData">0</span>
+                    <span id="passedPercentageData">0</span><span>%</span>
+                </h5>
+            </div>
+            <div id="failedCount">
+                <h5>    Failed:
+                    <span id="failedCountData">0</span>
+                    <span id="failedPercentageData">0</span><span>%</span>
+                </h5>
+            </div>
+        </div>
+        <div class="inputDataDiv">
+            <form>
+                <select name="subjectInput" id="subjectInput" value= "" required>
+                    <option value="">-</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="bootstrap">BOOTSTRAP</option>
+                    <option value="javascript">JAVASCRIPT</option>
+                    <option value="jquery">JQUERY</option>
+                    <option value="react">REACT</option>
+                </select>
+                <input type="text" value="" placeholder="Name Surname" id="nameAndSurname" required>
+                <select name="gradeInput" id="gradeInput" value="" required>
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <button type="submit" id="addStudentButton">ADD</button>
+            </form>
+        </div>
+        <div id="addedStudentsLists">
+            <ol id="passedStudentsList">
+                <h3>Passed Students:</h3>
+
+            </ol>
+            <ol id="failedStudentsList">
+                <h3>Failed Students:</h3>
+
+            </ol>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../js/subject.js"></script>
+    <script src="../js/student.js"></script>
+    <script src="../js/exam.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

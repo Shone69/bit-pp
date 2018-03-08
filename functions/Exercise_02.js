@@ -5,7 +5,7 @@
         console.log(num + " is not an odd number.");
     }
 } */
-
+"use strict";
 function odd(num) {
     if(num % 2 !== 0) {
         return num + " is an odd number.";

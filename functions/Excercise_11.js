@@ -1,9 +1,11 @@
+"use strict";
+
 var string = "";
 var number = 0;
 
 function concenate(string,number){
     var con = "";
-    for (i = 0; i < number; i++){
+    for (var i = 0; i < number; i++){
         con += string;
     } return con;
 }

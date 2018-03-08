@@ -1,3 +1,5 @@
+"use strict";
+
 function isBlank(value) {
     if (value === " "){
         console.log("true");

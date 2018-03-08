@@ -1,4 +1,4 @@
-
+"use strict";
 
 function sumOdd(givenArray) {
     var sum = 0;

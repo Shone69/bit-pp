@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belgrade Institute of Technology</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+
+<body>
+    <div class="left">
+        <fieldset>
+            <legend>Add Student</legend>
+            <input type="text" id="studentName" value="" placeholder="Name">
+            <input type="text" id="studentSurname" value="" placeholder="Surname">
+            <input type="number" id="indexNumber" value="" placeholder="Index Number">
+            <label for="studentStatus">Status:
+                <select name="studentStatus" id="studentStatus">
+                    <option value="">-</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Remote">Remote</option>
+                    <option value="Graduated">Graduated</option>
+                </select>
+            </label>
+            <input type="submit" id="addStudent" onclick="createStudent()" value="Add Student">
+        </fieldset>
+        <fieldset>
+            <legend>Add Professor</legend>
+            <input type="text" id="professorName" value="" placeholder="Name">
+            <input type="text" id="professorSurame" value="" placeholder="Surname">
+            <input type="number" id="employeeID" value="" placeholder="EmployeeID">
+            <input type="number" id="professorSalary" value "" placeholder="Salary">
+            <input type="text" id="professorOfficeNumber" value="" placeholder="Office Number">
+            <button type="submit" id="addProfessor">Add Professor</button>
+        </fieldset>
+    </div>
+    <div class="middle">
+        <section>
+            <legend>List of Students</legend>
+            <table class="studentList">
+                <tr>
+                    <th>No.</th>
+                    <th>Student</th>
+                </tr>
+            </table>
+            <input type="number" id="showStudentNumber">
+            <input type="button" id="showStudentButton" onclick="showStudent()" value="Display Student Data">
+            <table class="numOf10table">
+                <tr>
+                    <td>Number of 10 grades:</td>
+                    <td class="numOf10count"></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <legend>List of Professors</legend>
+            <table class="professorList">
+                <tr>
+                    <th>No.</th>
+                    <th>Professor</th>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div class="right">
+        <section>
+            <h3>Selected Student</h3>
+            <table class="selectedStudent">
+                <tr>
+                    <th class="selectedStudentTh">Name:</th>
+                    <td class="selectedStudentName"></td>
+                </tr>
+                <tr>
+                    <th class="selectedStudentTh">Surname:</th>
+                    <td class="selectedStudentSurname"></td>
+                </tr>
+                <tr>
+                    <th class="selectedStudentTh">ID:</th>
+                    <td class="selectedStudentID"></td>
+                </tr>
+                <tr>
+                    <th class="selectedStudentTh">Index Number:</th>
+                    <td class="selectedStudentIndexNumber"></td>
+                </tr>
+                <tr>
+                    <th class="selectedStudentTh">Status:</th>
+                    <td class="selectedStudentStatus"></td>
+                </tr>
+                <tr>
+                    <th class="selectedStudentTh">List of Passed Exams:</th>
+                    <td class="selectedStudentListOfExams">
+                        <ol type="I" class="passedExams">
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <fieldset class="addExam">
+            <legend>Add Exam</legend>
+            <label for="subject">Subject:
+                <select name="subject" id="subject">
+                    <option value="">-</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javaScript">JavaScipt</option>
+                    <option value="bootstrap">Bootstrap</option>
+                    <option value="react">React</option>
+                </select>
+            </label>
+            <label for="selectProfessor"> Professor:
+                <select name="selectProfessor" id="selectProfessor">
+                    <option value="-">-</option>
+                </select>
+            </label>
+            <label for="date">Date:
+                <input type="date" id="examDate" value="" placeholder="Date">
+            </label>
+            <label for="grade">Grade:
+                <select name="grade" id="grade">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </label>
+            <button class="addExam">Add Exam</button>
+        </fieldset>
+    </div>
+    <script src="faculty.js "></script>
+</body>
+
+</html>

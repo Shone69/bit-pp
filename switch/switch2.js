@@ -1,24 +1,28 @@
-var a = 8;
-
-switch(a) {
-    case 1:
-        
-    case 2:
+var day = '60';
+switch (day) {
+    case '1':
+        console.log('Monday');
+        break;
+    case '2':
+        console.log('Tuesday');
+        break;
+    case '3':
+        console.log('Wensday');
+    case '4':
+        console.log('Thursday')
+        break;
+    case '5':
+        console.log('Friday');
+        break;
+    case '6':
+        console.log('Saturday');
+        break;
+    case '7':
+        console.log('Sunday');
+        break;
        
-    case 3:
-        
-    case 4:
-        
-    case 5:
-        console.log("It is a weekday");
-        break;
-        
-    case 6:
-   
-    case 7:
-    
-    console.log("It is a weekend");
-        break;
-    default:console.log("Must  1-7");
-    
+    default:
+        console.log('Input must be a number between 1 and 7')
+
+
 }

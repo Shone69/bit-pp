@@ -1,3 +1,5 @@
+"use strict";
+
 function check(input){
     if (typeof(input) === "string"){
         console.log("true");

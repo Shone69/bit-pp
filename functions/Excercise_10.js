@@ -1,3 +1,5 @@
+"use strict";
+
 function string (name){
     var sum = 0;
     for (var i=0; i < name.length; i++){
